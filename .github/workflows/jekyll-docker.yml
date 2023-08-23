@@ -1,0 +1,20 @@
+Nombre             :          Sitio Jekyll CI
+
+en:
+         Puesto             :
+  ramas            :        [ "principal" ]
+ pull_request   :
+           ramas                            :         [ "principal" ]
+
+Empleos:
+           construcción               :
+
+ Run-on          :        ubuntu-último
+
+ pasos   :
+            -         usos             :         acciones/checkout@v3
+            -         Nombre             :         Construir el sitio en el contenedor de jekyll/constructor
+           Carrera                            :         |
+          correr de la tarjeta \          
+ -v $ {{       github.espacio de trabajo       }}:/srv/jekyll -v ${{       github.espacio de trabajo       }}/_site:/srv/jekyll/_site \
+ jekyll/constructor:último /bin/bash -c "chmod -R 777 /srv/jekyll y y jekyll build --future"
